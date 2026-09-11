@@ -69,8 +69,8 @@ Request와 달리 1:1 유니캐스트(Unicast)로 전송되며, Target MAC Addre
 
 ## 6.Summary & Learned
 
--ARP는 IPv4 주소를 기반으로 해당 장치의 MAC 주소를 확인하기 위해 사용된다.
--ARP Request를 통해 MAC 주소를 요청하고, ARP Reply를 통해 실제 MAC 주소를 전달받는 과정을 패킷 수준에서 확인하였다.
+ARP는 IPv4 주소를 기반으로 해당 장치의 MAC 주소를 확인하기 위해 사용된다.
+ARP Request를 통해 MAC 주소를 요청하고, ARP Reply를 통해 실제 MAC 주소를 전달받는 과정을 패킷 수준에서 확인하였다.
 
 
 
