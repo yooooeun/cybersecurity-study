@@ -85,6 +85,10 @@ sudo arp -d 192.168.56.10
 
 이를 통해 관리자가 특정 ARP Cache entry를 직접 삭제할 수 있음을 확인하였다.
 
+
+![ARP Cache Experiment](./images/arp-cache-experiment.png)
+
+
 ---
 
 ## 8. Learned
