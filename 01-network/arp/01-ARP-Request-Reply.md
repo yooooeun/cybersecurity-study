@@ -76,11 +76,8 @@ Request와 달리 1:1 유니캐스트(Unicast)로 전송되며, Target MAC Addre
 ## 6.Summary & Learned
 
 ARP는 IPv4 주소를 기반으로 해당 장치의 MAC 주소를 확인하기 위해 사용된다.
-
 ARP Request에서는 Target의 MAC 주소를 알 수 없기 때문에 Broadcast를 통해 특정 IP 주소의 MAC 주소를 요청한다.
-
 ARP Reply에서는 확인된 MAC 주소 정보를 요청한 호스트에게 전달하며, 일반적으로 Unicast 방식으로 전송된다.
-
 이번 실습에서는 Wireshark와 tcpdump를 이용하여 ARP Request와 ARP Reply의 Opcode, Sender/Target IP 및 MAC 주소를 직접 확인하면서 ARP의 IP-MAC 주소 매핑 과정을 패킷 수준에서 분석하였다
 
 
