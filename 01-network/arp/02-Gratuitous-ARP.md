@@ -40,11 +40,8 @@ Gratuitous ARP(GARP)는 다른 호스트의 MAC 주소를 조회하기 위한 �
 ## 4. Security Perspective
 
 ARP 프로토콜은 IP-MAC 매핑 정보를 검증하기 위한 기본적인 인증 메커니즘을 제공하지 않는다.
-
 따라서 공격자가 위조된 ARP 정보를 네트워크에 전송하면 호스트의 ARP Cache에 잘못된 IP-MAC 매핑이 저장될 수 있다.
-
 이러한 특성은 **ARP Spoofing** 및 **ARP Cache Poisoning**과 같은 공격에 악용될 수 있다.
-
 특히 Gratuitous ARP를 위조하여 잘못된 IP-MAC 매핑 정보를 네트워크에 전달하는 방식으로 ARP Cache Poisoning 등에 악용할 수 있다.
 
 
