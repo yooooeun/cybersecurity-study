@@ -104,6 +104,8 @@ Yersinia의 DHCP Mode에서는 DHCP Request, ACK, Discover, Offer 등의 DHCP �
 
 Yersinia에서 확인한 DHCP Discover 패킷을 분석하였다.
 
+![DHCP Discover Packet Analysis](./images/dhcp-discover.png)
+
 ```
 | Field              | Value               |
 | :----------------- | :------------------ |
