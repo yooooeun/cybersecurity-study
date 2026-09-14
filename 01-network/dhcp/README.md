@@ -56,3 +56,18 @@ DHCP 서버는 서로 다른 MAC 주소를 사용하는 요청을
 이 과정에서 IP 주소가 계속 할당되면서 DHCP 서버의
 사용 가능한 IP Pool이 감소하게 된다.
 
+```
+가짜 MAC 주소 생성
+        ↓
+DHCP Discover / Request 반복
+        ↓
+DHCP Server가 새로운 클라이언트로 인식
+        ↓
+IP Lease 할당
+        ↓
+IP Pool 감소
+        ↓
+IP Pool 고갈
+        ↓
+정상 사용자의 IP 할당 방해
+```
