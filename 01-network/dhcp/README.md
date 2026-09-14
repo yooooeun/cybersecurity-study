@@ -30,10 +30,29 @@ Client                         DHCP Server
    |                                |
 ```
 
+
 | Message           | Direction       | Purpose                       |
 | :---------------- | :-------------- | :---------------------------- |
 | **DHCP Discover** | Client → Server | DHCP 서버를 찾기 위한 요청             |
 | **DHCP Offer**    | Server → Client | DHCP 서버가 IP 주소 등의 설정을 제안      |
 | **DHCP Request**  | Client → Server | 제안받은 설정을 사용하겠다는 요청            |
 | **DHCP ACK**      | Server → Client | DHCP 서버가 요청을 승인하고 네트워크 설정을 할당 |
+
+---
+
+### 3. DHCP Starvation
+
+>>What is DHCP Starvation?
+
+DHCP Starvation Attack은 DHCP 서버가 보유하고 있는
+IP 주소를 반복적으로 할당하게 만들어 IP Pool을 고갈시키고,
+정상적인 사용자가 IP 주소를 할당받지 못하도록 방해하는 공격이다.
+
+공격자는 여러 개의 가짜 MAC 주소를 사용하여
+DHCP Discover 또는 Request를 반복적으로 발생시킨다.
+
+DHCP 서버는 서로 다른 MAC 주소를 사용하는 요청을
+서로 다른 클라이언트의 요청으로 인식할 수 있으며,
+이 과정에서 IP 주소가 계속 할당되면서 DHCP 서버의
+사용 가능한 IP Pool이 감소하게 된다.
 
