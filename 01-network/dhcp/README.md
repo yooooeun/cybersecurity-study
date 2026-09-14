@@ -71,3 +71,18 @@ IP Pool 고갈
         ↓
 정상 사용자의 IP 할당 방해
 ```
+
+## 4. Lab Environment
+
+실습 환경은 VMware에서 Kali Linux와 Ubuntu Desktop을 구성하고,
+두 시스템을 Host-Only Network로 연결하였다.
+
+Host-Only Network를 사용하여 외부 네트워크와 분리된 환경에서
+DHCP 통신 및 공격 과정을 확인하였다.
+
+Environment
+Attacker: Kali Linux
+Client: Ubuntu Desktop
+Virtualization: VMware
+Network: Host-Only Network
+Tool: Yersinia
