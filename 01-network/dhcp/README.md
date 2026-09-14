@@ -140,10 +140,11 @@ DHCP 서버는 클라이언트를 식별하기 위해 MAC 주소 등의 정보�
 Yersinia를 이용하여 다수의 DHCP 요청을 발생시켰다.
 
 ![Yersinia Attack Selection](./images/yersinia-attack-panel.png)
+![DHCP Attack Traffic](./images/dhcp-attack-traffic.png)
 
 실습 화면에서 DHCP Discover 요청이 지속적으로 발생하는 것을 확인하였다.
 
-![DHCP Attack Traffic](./images/dhcp-attack-traffic.png)
+![DHCP Attack Traffic Animation](./images/dhcp-attack-loop.gif)
 
 이처럼 반복적으로 새로운 DHCP 클라이언트 요청이 발생하면서 DHCP 서버가 보유하고 있는 IP Lease가 계속 할당되는 상황을 만들었다.
 
@@ -152,6 +153,8 @@ Yersinia를 이용하여 다수의 DHCP 요청을 발생시켰다.
 ## 9. DHCP Pool Exhaustion
 
 공격 이후 DHCP 서버의 로그를 확인하여 IP Pool이 고갈되는 결과를 확인하였다.
+
+![DHCP No Free Leases Log](./images/dhcp-no-free-leases.png)
 
 DHCP 서버에서 다음과 같은 메시지를 확인하였다.
 
