@@ -396,6 +396,9 @@ DSCP는 상위 6비트, ECN은 하위 2비트이므로:
 DSCP    ECN
 ```
 
+따라서 
+`DSCP = 46, ECN = 0`
+
 ---
 
 ## DSCP 값
