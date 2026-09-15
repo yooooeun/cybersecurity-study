@@ -331,6 +331,8 @@ MF = 0 → 현재 Fragment가 마지막 Fragment
 
 ## DSCP
 
+![DSCP PHB Mapping Table](./images/dscp-phb.png)
+
 DSCP(Differentiated Services Code Point)는 IPv4의 ToS 관련 필드에서 **상위 6비트**를 사용하는 값이다.
 
 네트워크 장비가 트래픽을 구분하고, 각 트래픽에 적절한 처리 방식(PHB)을 적용할 수 있도록 사용된다.
