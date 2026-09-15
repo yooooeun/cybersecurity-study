@@ -106,7 +106,7 @@ Yersinia에서 확인한 DHCP Discover 패킷을 분석하였다.
 
 ![DHCP Discover Packet Analysis](./images/dhcp-discover.png)
 
-```
+
 | Field              | Value               |
 | :----------------- | :------------------ |
 | **Source MAC**     | `00:0C:29:5A:C3:5B` |
@@ -115,7 +115,7 @@ Yersinia에서 확인한 DHCP Discover 패킷을 분석하였다.
 | **Protocol**       | UDP                 |
 | **Client Port**    | `68`                |
 | **Server Port**    | `67`                |
-```
+
 
 아직 IP 주소를 할당받지 않은 클라이언트는 source IP를 0.0.0.0으로 사용한다.
 
@@ -157,10 +157,8 @@ Yersinia를 이용하여 다수의 DHCP 요청을 발생시켰다.
 ![DHCP No Free Leases Log](./images/dhcp-no-free-leases.png)
 
 DHCP 서버에서 다음과 같은 메시지를 확인하였다.
+`No free leases`
 
-```
-No free leases
-```
 No free leases는 DHCP 서버에서 더 이상 할당할 수 있는 IP Lease가 없다는 의미이다.
 
 따라서 실습을 통해 DHCP Starvation 공격으로 인해 DHCP 서버의 할당 가능한 IP 자원이 고갈되는 과정을 확인하였다.
@@ -195,15 +193,15 @@ DHCP IP Pool 고갈
 
 ## 11. Countermeasures
 
-DHCP Snooping
+### DHCP Snooping
 
 스위치에서 DHCP 패킷을 검사하여 비정상적인 DHCP 요청이나 응답을 차단하는 데 활용할 수 있다.
 
-Port Security
+### Port Security
 
 스위치 포트별로 사용할 수 있는 MAC 주소의 개수를 제한하여 비정상적으로 많은 MAC 주소가 사용되는 상황을 방지할 수 있다.
 
-DHCP Request Rate Limiting
+### DHCP Request Rate Limiting
 
 하나의 포트에서 짧은 시간 동안 과도한 DHCP 요청이 발생하는 경우 요청 속도를 제한하거나 차단하여 비정상적인 DHCP 요청의 발생을 줄일 수 있다.
 
@@ -227,8 +225,8 @@ DHCP 서버의 자원 관리와 이를 악용한 공격 가능성까지
 
 ## 13. Learned
 
-이번 실습을 통해 DHCP의 기본적인 IP 주소 할당 과정인
-DORA(Discover → Offer → Request → ACK) 를 이해하였다.
+이번 실습을 통해 DHCP의 기본적인 IP 주소 할당 과정인 
+DORA(Discover → Offer → Request → ACK)를 이해하였다.
 
 또한 Yersinia를 이용하여 DHCP Discover 요청이 반복적으로 발생하는
 상황을 확인하고, 최종적으로 DHCP 서버에서
